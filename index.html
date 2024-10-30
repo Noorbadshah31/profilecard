@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Fraunces:opsz,wght@9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(185, 75%, 39%);
+      font-family: Kumbh Sans;
+      margin: 0;
+      padding: 0;
+      background-image: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat,no-repeat;
+      background-position: right 50vw bottom 40vh,left 40vw top 40vh;
+    }
+
+    section {
+      width: 300px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .main {
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .profile-photo {
+      display: flex;
+      justify-content: center;
+      margin-top: -50px;
+    }
+
+    .profile-photo>img {
+      border-radius: 50%;
+      border: #ffffff 5px solid;
+      padding: 0;
+      margin: 0;
+    }
+
+    .bottom-part {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      text-align: center;
+      gap: 0;
+    }
+
+    .bottom-part>* {
+      margin: 5px;
+    }
+
+    hr {
+      width: 100%;
+      border: none;
+      border-bottom: hsl(0, 0%, 59%) solid .5px;
+    }
+
+    p {
+      color: hsl(0, 0%, 59%);
+      font-size: 14px;
+    }
+
+    .profile-status>ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      padding: 0;
+    }
+
+    .profile-status>ul li * {
+      margin: 0;
+      text-align: center;
+    }
+
+    .profile-status>ul li p {
+      letter-spacing: 2px;
+      font-size: 0.7em;
+    }
+
+    h1 {
+      color: hsl(229, 23%, 23%);
+      font-size: 1.3em;
+    }
+
+    .bottom-part h1 span {
+      color: hsl(0, 0%, 59%);
+      font-weight: 300;
+      font-size: .8em;
+    }
+
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="main">
+      <div class="top-part">
+        <img src="./images/bg-pattern-card.svg" alt="">
+      </div>
+      <div class="profile-photo">
+        <img src="./images/image-victor.jpg" alt="">
+      </div>
+      <div class="bottom-part">
+        <h1>Victor Crest <span>26</span>
+        </h1>
+        <p>London</p>
+      </div>
+      <hr>
+      <div class="profile-status">
+        <ul>
+          <li>
+            <h1>80K</h1>
+            <p>Followers</p>
+          </li>
+          <li>
+            <h1>803K</h1>
+            <p>Likes</p>
+          </li>
+          <li>
+            <h1>1.4K</h1>
+            <p>Photos</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
